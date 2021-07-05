@@ -15,4 +15,4 @@ In this task I create
 
 https://www.w3schools.com/howto/howto_js_rangeslider.asp
 
-https://www.youtube.com/watch?v=wpyj1mnB_N0# control_panel_for_motors
+https://www.youtube.com/watch?v=wpyj1mnB_N0
