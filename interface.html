@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {text-align: center;}
+
+.slidecontainer {
+  width: 50%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1> Robot control panel </h1>
+
+<br>
+<br>
+<br>
+
+
+<!-- motro1 -->
+<div class="slidecontainer">
+<p> Motor 1 </p>
+  <input type="range" min="0" max="180" value="70" class="slider" id="Range1"> 
+  <p>Value: <span id="val1"></span></p>
+</div>
+
+<script>
+var slider = document.getElementById("Range1");
+var output = document.getElementById("val1");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+<br>
+<br>
+
+<!-- motro2 -->
+<div class="slidecontainer">
+<p> Motor 2 </p>
+  <input type="range" min="0" max="180" value="70" class="slider" id="Range2"> 
+  <p>Value: <span id="val2"></span></p>
+</div>
+
+<script>
+var slider2 = document.getElementById("Range2");
+var output2 = document.getElementById("val2");
+output2.innerHTML = slider.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+</script>
+
+<br>
+<br>
+
+<!-- motro3 -->
+<div class="slidecontainer">
+<p> Motor 3 </p>
+  <input type="range" min="0" max="180" value="70" class="slider" id="Range3"> 
+  <p>Value: <span id="val3"></span></p>
+</div>
+
+<script>
+var slider3 = document.getElementById("Range3");
+var output3 = document.getElementById("val3");
+output3.innerHTML = slider.value;
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+</script>
+
+<br>
+<br>
+
+<!-- motro4 -->
+<div class="slidecontainer">
+<p> Motor 4 </p>
+  <input type="range" min="0" max="180" value="70" class="slider" id="Range4"> 
+  <p>Value: <span id="val4"></span></p>
+</div>
+
+<script>
+var slider4 = document.getElementById("Range4");
+var output4 = document.getElementById("val4");
+output4.innerHTML = slider.value;
+
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+</script>
+
+<br>
+<br>
+
+<!-- motro5 -->
+<div class="slidecontainer">
+<p> Motor 5 </p>
+  <input type="range" min="0" max="180" value="70" class="slider" id="Range5"> 
+  <p>Value: <span id="val5"></span></p>
+</div>
+
+<script>
+var slider5 = document.getElementById("Range5");
+var output5 = document.getElementById("val5");
+output5.innerHTML = slider.value;
+
+slider5.oninput = function() {
+  output5.innerHTML = this.value;
+}
+</script>
+
+<br>
+<br>
+
+<!-- motro6 -->
+<div class="slidecontainer">
+<p> Motor 6 </p>
+  <input type="range" min="0" max="180" value="70" class="slider" id="Range6"> 
+  <p>Value: <span id="val6"></span></p>
+</div>
+
+<script>
+var slider6 = document.getElementById("Range6");
+var output6 = document.getElementById("val6");
+output6.innerHTML = slider.value;
+
+slider6.oninput = function() {
+  output6.innerHTML = this.value;
+}
+</script>
+
+<br>
+
+<input type="submit" value="تشغيل" style="font-size:20px">
+<input type="submit" value="حفظ" style="font-size:20px">
+
+
+</body>
+</html>
